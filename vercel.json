@@ -3,12 +3,6 @@
   "installCommand": "cd frontend && npm install",
   "buildCommand": "cd frontend && npm run build",
   "outputDirectory": "frontend/dist",
-  "functions": {
-    "api/main.py": {
-      "runtime": "@vercel/python",
-      "maxDuration": 15
-    }
-  },
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/main.py" },
     { "src": "/(.*)", "dest": "/frontend/dist/$1" }
