@@ -1,10 +1,11 @@
 /**
  * 后端 API 统一封装层。
- * 所有请求走相对路径 /api/*，由 vite.config.ts 中的 dev proxy 转发到 http://localhost:8000；
- * request() 内置 15s 超时（AbortController）与统一错误提示。
- * 功能分组：会话/问答、配队、材料计算、弧盘卡带、角色统计、（管理类接口在组件内直接 fetch）。
+ * 生产环境（Gitee Pages 托管前端 + PythonAnywhere 托管后端）：
+ *   - import.meta.env.VITE_API_BASE 指向 PythonAnywhere 的后端域名
+ * 开发环境（vite dev proxy）：
+ *   - VITE_API_BASE 为空，请求走相对路径 /api/*，由 vite.config.ts proxy 转发
  */
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_BASE || '/api';
 
 async function request<T>(url: string, options?: RequestInit): Promise<T> {
   // 用 AbortController 实现请求超时，避免 LLM 长时间无响应时前端一直等待
