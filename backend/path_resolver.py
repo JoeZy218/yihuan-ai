@@ -23,6 +23,16 @@ def is_frozen() -> bool:
     return getattr(sys, "frozen", False)
 
 
+def is_vercel() -> bool:
+    """
+    是否运行在 Vercel Serverless Function 环境中。
+    Vercel 环境特有的标志：VERCEL=1 环境变量 + 进程名中有 'vercel'。
+    Vercel 上 SQLite 数据库需指向 /tmp（临时文件系统，冷启动会被清空，
+    但每次冷启动 _ensure_database() 会从 data/*.json 自动重建，可接受）。
+    """
+    return os.environ.get("VERCEL") == "1" or "vercel" in os.environ.get("PATH", "").lower()
+
+
 def get_backend_dir() -> str:
     """
     获取 backend 目录路径。
@@ -63,13 +73,17 @@ def get_db_path() -> str:
     获取 SQLite 数据库路径。
     打包时数据库放在 .exe 同级目录（可写），确保用户数据持久化。
 
-    云端部署：可通过环境变量 YIHUAN_DATA_DIR 指向持久化卷（如 Render 的
-    persistent disk /opt/data），避免 ephemeral filesystem 重部署丢数据。
+    云端部署：
+    - Vercel Serverless：用 /tmp（临时文件系统，冷启动清空但每次自动从 JSON 重建）
+    - Render/VPS 等：可通过环境变量 YIHUAN_DATA_DIR 指向持久化卷
     桌面本地未设置该变量 → 走原逻辑，零影响。
     """
     env_dir = os.environ.get("YIHUAN_DATA_DIR")
     if env_dir:
         return os.path.join(env_dir, "yihuan.db")
+    if is_vercel():
+        # Vercel Serverless 临时文件系统：/tmp 在函数生命周期内可写
+        return "/tmp/yihuan.db"
     if is_frozen():
         return os.path.join(get_app_dir(), "yihuan.db")
     return os.path.join(get_backend_dir(), "yihuan.db")

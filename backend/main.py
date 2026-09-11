@@ -1445,22 +1445,25 @@ async def reset_stats():
     return {"message": "统计数据已重置"}
 
 # ========== 前端静态文件托管 ==========
-# 打包后由 FastAPI 直接托管前端构建产物（frontend/dist/），
-# 用户无需安装 Node.js，只需打开 http://localhost:8000 即可访问。
-_frontend_dir = get_frontend_dir()
-if os.path.isdir(os.path.join(_frontend_dir, "assets")):
-    app.mount("/assets", StaticFiles(directory=os.path.join(_frontend_dir, "assets")), name="assets")
+# 桌面打包 + Render：由 FastAPI 直接托管 frontend/dist/（单端口同源）
+# Vercel：静态文件走 CDN（vercel.json routes），Python 函数只处理 /api/*，
+#         不能在这里重复挂载（否则 Vercel 上 / 路由冲突）
+from path_resolver import is_vercel
+if not is_vercel():
+    _frontend_dir = get_frontend_dir()
+    if os.path.isdir(os.path.join(_frontend_dir, "assets")):
+        app.mount("/assets", StaticFiles(directory=os.path.join(_frontend_dir, "assets")), name="assets")
 
-    @app.get("/")
-    async def serve_index():
-        return FileResponse(os.path.join(_frontend_dir, "index.html"))
+        @app.get("/")
+        async def serve_index():
+            return FileResponse(os.path.join(_frontend_dir, "index.html"))
 
-    # SPA 兜底：非 /api 路径一律返回 index.html
-    @app.get("/{full_path:path}")
-    async def serve_spa(full_path: str):
-        if full_path.startswith("api"):
-            raise HTTPException(status_code=404, detail="Not found")
-        return FileResponse(os.path.join(_frontend_dir, "index.html"))
+        # SPA 兜底：非 /api 路径一律返回 index.html
+        @app.get("/{full_path:path}")
+        async def serve_spa(full_path: str):
+            if full_path.startswith("api"):
+                raise HTTPException(status_code=404, detail="Not found")
+            return FileResponse(os.path.join(_frontend_dir, "index.html"))
 
 # ========== 首次启动自动初始化数据库 ==========
 def _ensure_database():
