@@ -5,7 +5,7 @@
   "outputDirectory": "frontend/dist",
   "functions": {
     "api/main.py": {
-      "runtime": "@vercel/python@4.1.0",
+      "runtime": "@vercel/python",
       "maxDuration": 15
     }
   },
