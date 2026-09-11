@@ -1,0 +1,43 @@
+# Render Blueprint：一键声明式部署《异环 AI 战术教学助手》到云端
+#
+# 使用方法：
+#   1. 把代码 push 到 GitHub
+#   2. Render Dashboard → New → Blueprint → 连接仓库 → 选此分支
+#   3. 部署界面会提示填写 LLM_API_KEY（DeepSeek 的 sk-...，属于机密不入库）
+#   4. Render 会按本文件自动创建 web service 并完成部署
+#
+# 说明：
+# - buildCommand 在构建阶段构建前端 → frontend/dist/，运行期由 FastAPI 托管
+# - startCommand 用 uvicorn 启动，--proxy-headers 信任 Render 反代的 X-Forwarded-*
+# - 首次启动时后端自动从 data/*.json 初始化 SQLite（无需手动建库）
+# - 免费版不支持持久硬盘：在网页"数据管理"里新增的数据会在重新部署后丢失，
+#   但角色/弧盘/卡带等基线数据每次都会自动重建。
+#   如需保留用户新增数据：把 plan 改为 starter（约 $7/月），
+#   并在文件末尾按注释启用 disk 与 YIHUAN_DATA_DIR。
+
+services:
+  - type: web
+    name: yihuan-ai
+    runtime: python
+    plan: free
+    buildCommand: cd frontend && npm ci && npm run build && cd ../backend && pip install -r requirements.txt
+    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT --proxy-headers
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
+      - key: LLM_API_KEY
+        sync: false
+      - key: LLM_API_URL
+        value: https://api.deepseek.com/v1/chat/completions
+      - key: LLM_MODEL
+        value: deepseek-chat
+
+# ===== 升级到付费版后，启用以下配置即可让数据库持久化 =====
+#    envVars 中追加：
+#      - key: YIHUAN_DATA_DIR
+#        value: /opt/data
+#    并在与 envVars 同级位置追加：
+#    disk:
+#      name: yihuan-data
+#      mountPath: /opt/data
+#      sizeGB: 1

@@ -1,0 +1,107 @@
+{
+  "ascension_materials": {
+    "光": [
+      {"name": "光蕴碎片", "tier": 1, "source": "异象追猎·光属性BOSS", "source_type": "异象追猎"},
+      {"name": "光蕴晶块", "tier": 2, "source": "异象追猎·光属性BOSS", "source_type": "异象追猎"},
+      {"name": "光蕴核心", "tier": 3, "source": "异象追猎·光属性BOSS", "source_type": "异象追猎"},
+      {"name": "光蕴之心", "tier": 4, "source": "异象追猎·光属性BOSS", "source_type": "异象追猎"}
+    ],
+    "灵": [
+      {"name": "灵蕴碎片", "tier": 1, "source": "异象追猎·灵属性BOSS", "source_type": "异象追猎"},
+      {"name": "灵蕴晶块", "tier": 2, "source": "异象追猎·灵属性BOSS", "source_type": "异象追猎"},
+      {"name": "灵蕴核心", "tier": 3, "source": "异象追猎·灵属性BOSS", "source_type": "异象追猎"},
+      {"name": "灵蕴之心", "tier": 4, "source": "异象追猎·灵属性BOSS", "source_type": "异象追猎"}
+    ],
+    "咒": [
+      {"name": "咒蕴碎片", "tier": 1, "source": "异象追猎·咒属性BOSS", "source_type": "异象追猎"},
+      {"name": "咒蕴晶块", "tier": 2, "source": "异象追猎·咒属性BOSS", "source_type": "异象追猎"},
+      {"name": "咒蕴核心", "tier": 3, "source": "异象追猎·咒属性BOSS", "source_type": "异象追猎"},
+      {"name": "咒蕴之心", "tier": 4, "source": "异象追猎·咒属性BOSS", "source_type": "异象追猎"}
+    ],
+    "暗": [
+      {"name": "暗蕴碎片", "tier": 1, "source": "异象追猎·暗属性BOSS", "source_type": "异象追猎"},
+      {"name": "暗蕴晶块", "tier": 2, "source": "异象追猎·暗属性BOSS", "source_type": "异象追猎"},
+      {"name": "暗蕴核心", "tier": 3, "source": "异象追猎·暗属性BOSS", "source_type": "异象追猎"},
+      {"name": "暗蕴之心", "tier": 4, "source": "异象追猎·暗属性BOSS", "source_type": "异象追猎"}
+    ],
+    "魂": [
+      {"name": "魂蕴碎片", "tier": 1, "source": "异象追猎·魂属性BOSS", "source_type": "异象追猎"},
+      {"name": "魂蕴晶块", "tier": 2, "source": "异象追猎·魂属性BOSS", "source_type": "异象追猎"},
+      {"name": "魂蕴核心", "tier": 3, "source": "异象追猎·魂属性BOSS", "source_type": "异象追猎"},
+      {"name": "魂蕴之心", "tier": 4, "source": "异象追猎·魂属性BOSS", "source_type": "异象追猎"}
+    ],
+    "相": [
+      {"name": "相蕴碎片", "tier": 1, "source": "异象追猎·相属性BOSS", "source_type": "异象追猎"},
+      {"name": "相蕴晶块", "tier": 2, "source": "异象追猎·相属性BOSS", "source_type": "异象追猎"},
+      {"name": "相蕴核心", "tier": 3, "source": "异象追猎·相属性BOSS", "source_type": "异象追猎"},
+      {"name": "相蕴之心", "tier": 4, "source": "异象追猎·相属性BOSS", "source_type": "异象追猎"}
+    ]
+  },
+  "character_ascension": {
+    "异能者·零": {"boss": "异象追猎·光属性BOSS", "specialty": "倾诉花种"},
+    "小吱": {"boss": "异象追猎·光属性BOSS", "specialty": "倾诉花种"},
+    "浔": {"boss": "异象追猎·塞润尼缇", "specialty": "倾诉花种"},
+    "娜娜莉": {"boss": "异象追猎·灵属性BOSS", "specialty": "异界花芽"},
+    "九原": {"boss": "异象追猎·灵属性BOSS", "specialty": "异界花芽"},
+    "薄荷": {"boss": "异象追猎·灵属性BOSS", "specialty": "异界花芽"},
+    "海月": {"boss": "异象追猎·灵属性BOSS", "specialty": "异界花芽"},
+    "白藏": {"boss": "异象追猎·咒属性BOSS", "specialty": "暗影花蕊"},
+    "早雾": {"boss": "异象追猎·咒属性BOSS", "specialty": "暗影花蕊"},
+    "阿德勒": {"boss": "异象追猎·咒属性BOSS", "specialty": "暗影花蕊"},
+    "安魂曲": {"boss": "异象追猎·暗属性BOSS", "specialty": "幽冥花籽"},
+    "达芙蒂尔": {"boss": "异象追猎·暗属性BOSS", "specialty": "幽冥花籽"},
+    "哈尼娅": {"boss": "异象追猎·暗属性BOSS", "specialty": "幽冥花籽"},
+    "法帝娅": {"boss": "异象追猎·魂属性BOSS", "specialty": "灵魂花瓣"},
+    "哈索尔": {"boss": "异象追猎·相属性BOSS", "specialty": "虚相花蕾"},
+    "翳": {"boss": "异象追猎·相属性BOSS", "specialty": "虚相花蕾"}
+  },
+  "skill_materials": {
+    "光": {"name": "鸽子图案系列", "source": "异能升级材料副本·光", "source_type": "副本"},
+    "灵": {"name": "星灵图案系列", "source": "异能升级材料副本·灵", "source_type": "副本"},
+    "咒": {"name": "咒纹图案系列", "source": "异能升级材料副本·咒", "source_type": "副本"},
+    "暗": {"name": "暗影图案系列", "source": "异能升级材料副本·暗", "source_type": "副本"},
+    "魂": {"name": "灵魂图案系列", "source": "异能升级材料副本·魂", "source_type": "副本"},
+    "相": {"name": "虚相图案系列", "source": "异能升级材料副本·相", "source_type": "副本"}
+  },
+  "arcdisk_materials": {
+    "说明": "弧盘突破材料通过弧盘突破材料副本获取，每个弧盘对应不同的副本",
+    "types": [
+      {"name": "剧芯系列·泡影罐头", "source": "弧盘突破材料副本", "source_type": "副本"},
+      {"name": "剧芯系列·星辰碎片", "source": "弧盘突破材料副本", "source_type": "副本"},
+      {"name": "剧芯系列·暗影结晶", "source": "弧盘突破材料副本", "source_type": "副本"}
+    ]
+  },
+  "weekly_boss_materials": [
+    {"name": "异象巡礼材料", "source": "异象巡礼（周本）", "source_type": "周本", "desc": "用于角色异能高等级升级和被动技能升级"},
+    {"name": "世界BOSS材料", "source": "异象追猎（世界BOSS）", "source_type": "世界BOSS", "desc": "用于角色每十级一次的突破"}
+  ],
+  "common_materials": [
+    {"name": "异能经验书·初阶", "tier": 1, "source": "异能升级材料副本", "source_type": "副本"},
+    {"name": "异能经验书·中阶", "tier": 2, "source": "异能升级材料副本", "source_type": "副本"},
+    {"name": "异能经验书·高阶", "tier": 3, "source": "异能升级材料副本", "source_type": "副本"},
+    {"name": "异能经验书·大师", "tier": 4, "source": "异能升级材料副本", "source_type": "副本"}
+  ],
+  "currency": [
+    {"name": "环石", "desc": "抽卡货币，可通过充值或游戏内获取"},
+    {"name": "金币", "desc": "通用货币，用于角色升级和弧盘强化"},
+    {"name": "体力", "desc": "刷取副本材料消耗，每天自动恢复"}
+  ],
+  "ascension_formula": {
+    "S": [
+      {"from": 1, "to": 10, "tier_mat": 0, "tier_count": 3, "gold": 5000},
+      {"from": 10, "to": 20, "tier_mat": 1, "tier_count": 8, "gold": 10000},
+      {"from": 20, "to": 30, "tier_mat": 1, "tier_count": 15, "gold": 20000},
+      {"from": 30, "to": 40, "tier_mat": 2, "tier_count": 12, "gold": 40000},
+      {"from": 40, "to": 50, "tier_mat": 2, "tier_count": 20, "gold": 60000},
+      {"from": 50, "to": 60, "tier_mat": 3, "tier_count": 15, "gold": 80000}
+    ],
+    "A": [
+      {"from": 1, "to": 10, "tier_mat": 0, "tier_count": 2, "gold": 3000},
+      {"from": 10, "to": 20, "tier_mat": 1, "tier_count": 5, "gold": 6000},
+      {"from": 20, "to": 30, "tier_mat": 1, "tier_count": 10, "gold": 12000},
+      {"from": 30, "to": 40, "tier_mat": 2, "tier_count": 8, "gold": 25000},
+      {"from": 40, "to": 50, "tier_mat": 2, "tier_count": 14, "gold": 40000},
+      {"from": 50, "to": 60, "tier_mat": 3, "tier_count": 10, "gold": 55000}
+    ]
+  }
+}

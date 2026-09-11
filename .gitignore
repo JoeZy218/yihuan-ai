@@ -1,0 +1,36 @@
+# ===== 依赖目录（由 npm/pip 在云端重新安装，绝不上传）=====
+node_modules/
+frontend/node_modules/
+venv/
+.venv/
+backend/venv/
+
+# ===== 构建产物（Render 构建时会重新生成）=====
+frontend/dist/
+# PyInstaller 桌面打包产物（体积大且仅用于 Windows 桌面版，云端部署不需要）
+backend/dist/
+backend/build/
+
+# ===== TypeScript 构建缓存 =====
+*.tsbuildinfo
+
+# ===== Python 缓存 =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ===== 本地数据库与密钥（云端自动初始化数据库，.env 含密钥绝不上传）=====
+backend/yihuan.db
+backend/yihuan.db-journal
+.env
+
+# ===== 运行时文件与日志 =====
+*.log
+running.pid
+
+# ===== 系统/编辑器垃圾文件 =====
+.DS_Store
+Thumbs.db desktop.ini
+.vscode/
+.idea/

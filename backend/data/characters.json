@@ -1,0 +1,325 @@
+[
+  {
+    "id": "jiuyuan",
+    "name": "九原",
+    "element": "灵",
+    "role": "副C",
+    "rarity": "S",
+    "skills": {
+      "normal": "秘密成型时：进行至多5段连续射击，造成灵属性异能伤害",
+      "skill": "情报猎手：穿梭战场对目标造成多段灵属性异能伤害并获得玫约子弹，缔结致命玫约",
+      "ultimate": "终局清账：高速穿梭战场展开连续射击，最终以大范围爆炸收束战局，造成灵属性异能伤害"
+    },
+    "best_arcdisk": "现实避难所",
+    "best_set": "森林萤火之心",
+    "synergy": [
+      "光",
+      "咒"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/a/aa/r81bdrgl44rc8c0stchwube8gokl6za.png"
+  },
+  {
+    "id": "hasuoer",
+    "name": "哈索尔",
+    "element": "相",
+    "role": "副C",
+    "rarity": "S",
+    "skills": {
+      "normal": "快递闪送：进行至多5段连续攻击，命中积攒「闪送之力」，攒满6层后强化所有技能",
+      "skill": "闪送快递：释放变轨技能造成相属性爆发伤害，强化状态下倍率大幅提升，连续3次强化E是核心输出",
+      "ultimate": "极速送达：召唤摩托车轰击目标区域造成大范围相属性伤害，进入强化状态全技能获得增幅"
+    },
+    "best_arcdisk": "焰魂狂飙",
+    "best_set": "街头拳王",
+    "synergy": [
+      "魂",
+      "光"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/1/15/snlmvqbdclan312cg4hqko1r6gzjqea.png"
+  },
+  {
+    "id": "nananli",
+    "name": "娜娜莉",
+    "element": "灵",
+    "role": "主C",
+    "rarity": "S",
+    "skills": {
+      "normal": "柯林斯秘传技法：进行至多5段连续攻击，造成灵属性异能伤害",
+      "skill": "柯林斯·嗷呜术：对周围敌人造成5次范围灵系伤害，进入一代目的权柄状态提高暴击伤害",
+      "ultimate": "柯林斯·终极术：对周围敌人造成7次范围灵系伤害，并召唤副手一同战斗"
+    },
+    "best_arcdisk": "预备备",
+    "best_set": "森林萤火之心",
+    "synergy": [
+      "光",
+      "咒"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/c/c3/8oir3jfn584h0zh775iql0bohfc56tt.png"
+  },
+  {
+    "id": "anghunqu",
+    "name": "安魂曲",
+    "element": "暗",
+    "role": "主C",
+    "rarity": "S",
+    "skills": {
+      "normal": "噩梦画笔：短按5段攻击，第五段肩扛颜料炮高伤击退，每次命中叠1层噩梦；长按可拟态学习偷取精英/Boss招式",
+      "skill": "拟态替换：使用拟态学习后替换为敌人招式，获得目标30%攻击力加成，持续造成暗属性DOT伤害",
+      "ultimate": "终幕涂鸦：释放大范围暗属性爆发伤害，噩梦层数越高伤害越强"
+    },
+    "best_arcdisk": "",
+    "best_set": "",
+    "synergy": [
+      "咒",
+      "魂"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/d/d6/svbtyw3lo908ztuwz6ffh4ab2vyqfnr.png"
+  },
+  {
+    "id": "xiaozhi",
+    "name": "小吱",
+    "element": "光",
+    "role": "主C",
+    "rarity": "S",
+    "skills": {
+      "normal": "黑糖连击：五段短杖连击造成光属性异能伤害并获取金谷；长按释放黑糖波波进行范围吞噬",
+      "skill": "金谷投资：消耗金谷释放光属性爆发伤害，金谷市场期间K线上涨时释放伤害翻倍",
+      "ultimate": "金谷市场：进入金谷市场状态，期间通过变轨技能打出超高爆发伤害"
+    },
+    "best_arcdisk": "思考喵",
+    "best_set": "失落光芒",
+    "synergy": [
+      "灵",
+      "相"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/3/35/ipme2ponysrtq62cs0p1yl1aw9z0h8t.png"
+  },
+  {
+    "id": "ling",
+    "name": "异能者·零",
+    "element": "光",
+    "role": "主C",
+    "rarity": "S",
+    "skills": {
+      "normal": "裂隙斩击：进行多段光属性连续攻击，第四段可打断霸体，快速叠加时隙共鸣层数",
+      "skill": "裂隙突刺：释放光属性突刺伤害并即瞬环合，可立刻切换角色触发异能环合",
+      "ultimate": "时隙崩裂：释放大范围光属性爆发伤害，积攒的时隙共鸣层数越多伤害越高"
+    },
+    "best_arcdisk": "倾世之雨",
+    "best_set": "失落光芒",
+    "synergy": [
+      "灵",
+      "相"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/8/85/auyvpe0ekqxmxxnewyjp67qwdb9gwlj.png"
+  },
+  {
+    "id": "zaowu",
+    "name": "早雾",
+    "element": "咒",
+    "role": "辅助",
+    "rarity": "S",
+    "skills": {
+      "normal": "重锤横扫：挥舞大锤进行至多5段连续攻击，造成咒属性异能伤害",
+      "skill": "饕餮聚宴：E技能聚拢周围敌人并造成咒属性伤害，被动可降低目标10%防御",
+      "ultimate": "千钧隆重的饕餮宴：大范围咒属性爆发伤害，开大后为全队提供30%攻击力加成"
+    },
+    "best_arcdisk": "好狗狗走四方",
+    "best_set": "音速蓝刺猬",
+    "synergy": [
+      "灵",
+      "暗"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/f/fc/emv8y40kj53273nwimccilvvqnk37t7.png"
+  },
+  {
+    "id": "fadiya",
+    "name": "法帝娅",
+    "element": "魂",
+    "role": "生存",
+    "rarity": "S",
+    "skills": {
+      "normal": "灵魂穿刺：挥舞大盾进行至多5段连续攻击，造成魂属性异能伤害",
+      "skill": "破灭体验：挂标记为队友分摊伤害，标记后可将伤害反射到敌人身上",
+      "ultimate": "敌神者降临：进入敌神者状态，5段普攻造成大量心灵伤害，兼具输出与防护"
+    },
+    "best_arcdisk": "永恒圆舞曲",
+    "best_set": "小小大冒险",
+    "synergy": [
+      "暗",
+      "相"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/b/b9/ech2yrngjpf4hcynz4bzmfma179j5mk.png"
+  },
+  {
+    "id": "xun",
+    "name": "浔",
+    "element": "光",
+    "role": "辅助",
+    "rarity": "S",
+    "skills": {
+      "normal": "胧月流：进行多段光属性连续攻击，造成光属性异能伤害",
+      "skill": "今景复映：消耗能量造成6次光属性伤害，5秒内记录队友使用的变轨/协同技能",
+      "ultimate": "浮世来潮：消耗能量造成10次光属性伤害，拔出太刀开启时停并复现记录的队友攻击"
+    },
+    "best_arcdisk": "行进于时间之外",
+    "best_set": "失落光芒",
+    "synergy": [
+      "灵",
+      "相"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/0/09/rah39z9oyzcnovtf74rt298siv83f3j.png"
+  },
+  {
+    "id": "baizang",
+    "name": "白藏",
+    "element": "咒",
+    "role": "主C",
+    "rarity": "S",
+    "skills": {
+      "normal": "言灵连斩：进行多段咒属性近战斩击，终结技期间普攻可引爆言灵字",
+      "skill": "符咒突进：定向多段斩击附带中距离突进，造成咒属性范围伤害",
+      "ultimate": "言灵领域：释放领域造成大范围咒属性伤害，可引爆噤字(单体高伤)、詈字(群体)、祝字(回复)"
+    },
+    "best_arcdisk": "茶花会",
+    "best_set": "真红：双生蝶",
+    "synergy": [
+      "灵",
+      "暗"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/0/0d/chndpw06zj4h1ab9hpylm07ui2kxm97.png"
+  },
+  {
+    "id": "dafudier",
+    "name": "达芙蒂尔",
+    "element": "暗",
+    "role": "副C",
+    "rarity": "S",
+    "skills": {
+      "normal": "止水：进行至多5段暗属性连续攻击，造成暗属性异能伤害",
+      "skill": "同振/如响斯应：援护技叠层强化，释放暗属性爆发伤害并提供倾陷增益",
+      "ultimate": "见此终幕：造成大范围暗属性伤害，解放左眼植入洞察，强化后续所有技能"
+    },
+    "best_arcdisk": "漆黑青春妄想",
+    "best_set": "迪亚波罗斯",
+    "synergy": [
+      "咒",
+      "魂"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/5/57/8cyvizzuzjvnqpofikrd5641293e2jc.png"
+  },
+  {
+    "id": "haniya",
+    "name": "哈尼娅",
+    "element": "暗",
+    "role": "辅助",
+    "rarity": "A",
+    "skills": {
+      "normal": "魂刃连斩：五段连续斩击造成暗属性伤害，最后一段附带标记使敌人额外承伤",
+      "skill": "环合充能：立刻充满环合能量方便切人触发异能环合，同时为队友提供增益",
+      "ultimate": "暗影共鸣：释放全队增益效果，大幅提升队友攻击力和暗属性伤害"
+    },
+    "best_arcdisk": "引爆全场",
+    "best_set": "音速蓝刺猬",
+    "synergy": [
+      "咒",
+      "魂"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/d/dc/02osd16ivxwlz43vvaogtv3p2zk8gkx.png"
+  },
+  {
+    "id": "aidejia",
+    "name": "埃德嘉",
+    "element": "光",
+    "role": "生存",
+    "rarity": "A",
+    "skills": {
+      "normal": "光能连击：进行多段光属性连续攻击，为终结技积攒能量",
+      "skill": "永续治疗：变轨技持续站场治疗队友，回复全队生命值",
+      "ultimate": "生命领域：释放领域持续治疗+单体强抬，大幅回复全队血线"
+    },
+    "best_arcdisk": "扭曲之城的呼唤",
+    "best_set": "音速蓝刺猬",
+    "synergy": [
+      "灵",
+      "相"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/c/ce/9cd29mhpdmhgk2j5e9ivdrk7ysjtf53.png"
+  },
+  {
+    "id": "haiyue",
+    "name": "海月",
+    "element": "灵",
+    "role": "副C",
+    "rarity": "A",
+    "skills": {
+      "normal": "水母弹幕：四段攻击造成灵属性伤害，长按骑水母高速移动并自动发射水母弹攻击周围敌人",
+      "skill": "灵潮涌动：以自身为中心释放灵属性持续伤害场，对范围内敌人持续造成灵属性伤害",
+      "ultimate": "深海共鸣：释放大范围灵属性爆发伤害，召唤水母群攻击区域内所有敌人"
+    },
+    "best_arcdisk": "银河暂留",
+    "best_set": "",
+    "synergy": [
+      "光",
+      "咒"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/d/d9/0j6ozyw5v22iszr8m3jpgyhqigod7bk.png"
+  },
+  {
+    "id": "yi",
+    "name": "翳",
+    "element": "相",
+    "role": "副C",
+    "rarity": "A",
+    "skills": {
+      "normal": "相刃连击：进行多段相属性连续攻击，稳定积攒倾陷值",
+      "skill": "突进斩击：定向多段斩击附带中距离突进，造成相属性爆发伤害",
+      "ultimate": "极限压制：生成伤害区域后衔接三段强化打击，短时间内集中全部爆发"
+    },
+    "best_arcdisk": "当头头顶",
+    "best_set": "街头拳王",
+    "synergy": [
+      "魂",
+      "光"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/6/63/fuod207lk311swr0sjx9wffyn08ky37.png"
+  },
+  {
+    "id": "bohe",
+    "name": "薄荷",
+    "element": "灵",
+    "role": "主C",
+    "rarity": "A",
+    "skills": {
+      "normal": "灵能连击：进行多段灵属性连续攻击，积攒灵能标记",
+      "skill": "灵能爆破：释放灵属性异能造成范围伤害，灵能标记越多伤害越高",
+      "ultimate": "灵能风暴：释放大范围灵属性爆发伤害，引爆所有灵能标记"
+    },
+    "best_arcdisk": "极速之绵",
+    "best_set": "森林萤火之心",
+    "synergy": [
+      "光",
+      "咒"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/0/0a/7t6vp54molwgulzn9005d9fgfblp0t1.png"
+  },
+  {
+    "id": "adele",
+    "name": "阿德勒",
+    "element": "咒",
+    "role": "生存",
+    "rarity": "A",
+    "skills": {
+      "normal": "拐杖连击：多段拐杖攻击造成咒属性伤害，蓄力瞄准射击可叠加「业」层数（最高20层）",
+      "skill": "守护之盾：为全队生成基于防御力的护盾，护盾持续期间追加增伤效果",
+      "ultimate": "制裁审判：释放基于防御力倍率的咒属性范围伤害，「业」层数越高伤害越强"
+    },
+    "best_arcdisk": "勿忘伞",
+    "best_set": "守卫王国",
+    "synergy": [
+      "灵",
+      "暗"
+    ],
+    "picture": "https://patchwiki.biligame.com/images/yh/b/b6/74a8avaslusbu49c9kekaktt70bw9gk.png"
+  }
+]
