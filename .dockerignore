@@ -1,0 +1,23 @@
+# 忽略这些文件，不进入 Docker 构建上下文
+frontend/
+node_modules/
+dist/
+.env
+*.db
+*.db-journal
+__pycache__/
+*.pyc
+.git/
+.github/
+render.yaml
+.vite-env.d.ts
+vite.config.ts
+tsconfig.json
+tsconfig.node.json
+src/
+index.html
+public/
+package.json
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
